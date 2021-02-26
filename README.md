@@ -57,7 +57,7 @@ patterns_resolve_scenario позволяет выбрать сценарий с 
 
 # Документация
 
-?????
+https://developer.sberdevices.ru/docs/ru/developer_tools/framework/SAF-Patterns
 
 # Обратная связь
 
