@@ -26,4 +26,5 @@ class PatternRequirement(Requirement):
 
     def check(self, text_preprocessing_result: TextPreprocessingResult, user: BaseUser,
               params: typing.Dict[str, typing.Any] = None) -> bool:
-        return bool(self.matcher.Match(text_preprocessing_result.original_text, None, None, None, self.MORPHER))
+        matches = tuple(self.matcher.Match(text_preprocessing_result.original_text, None, None, None, self.MORPHER))
+        return len(matches) != 0
